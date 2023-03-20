@@ -17,13 +17,77 @@
     ></script>
     <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
 
+
+            <!-- Fonts -->
+            <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+            <!--CSS-->
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+            {{-- <link rel="stylesheet" href="{!! asset('css/stilo.css') !!}"> --}}
+
     <script scr="{{asset('js/mdb.min.js')}}"></script>
-    <title>Desarrollo web profesional</title>
+    <title>Dulceria UTA</title>
 </head>
 <body>
+
+  {{-- <div id="header-container">
     <header>
+        <div class="flex container">
+            <a id="logo" href="#">
+                <img class="img-uta" src="{{ asset('img/uta sin fondo.png') }}" alt="Logo UTA">
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <button id="nav-toggle" class="hamburger-menu">
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                </button>
+
+                <ul id="nav-menu">
+                  @auth
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#" >Servicios</a></li>
+                    <li><a href="#">Dulces</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Testimonios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li id="close-flyout"><span class="fas fa-times"></span></li>
+
+                  
+                    <div class="d-flex aling-items-center">
+                      <a href="{{route ('post.create')}}" class="btn btn-link px-3 me-2">
+                        <i class="fas fa-plus-circle"></i>Crear Post
+                      </a>
+                    </div>
+                  @endauth
+                  @auth
+                  <form action="{{route('logout')}}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-link px-3 me-2">LogOut</button>
+                  </form>
+                  @endauth
+            
+                  @guest
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000/login">LOGIN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000/formulario">Sign In</a>
+                  </li>
+                  @endguest
+                </ul>
+            </nav>
+        </div>
+    </header> --}}
+
+
+     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <a id="logo" href="#">
+            <img class="img-uta" style=" width: 50px;
+            height: 50px;" src="{{ asset('img/uta sin fondo.png') }}" alt="Logo UTA">
+        </a>
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -41,7 +105,7 @@
                 <li class="nav-item active">
                   <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/">Home</a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                   <a class="nav-link" href="#">Serie</a>
                 </li>
                 <li class="nav-item">
@@ -49,7 +113,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Informacion sobre One Piece</a>
-                </li>
+                </li> --}}
                 @auth
                   <div class="d-flex aling-items-center">
                     <a href="{{route ('post.create')}}" class="btn btn-link px-3 me-2">
@@ -60,16 +124,16 @@
                 @auth
                 <form action="{{route('logout')}}" method="POST">
                   @csrf
-                  <button type="submit" class="btn btn-link px-3 me-2">LogOut</button>
+                  <button type="submit" class="btn btn-link px-3 me-2">Cerrar sesión</button>
                 </form>
                 @endauth
           
                 @guest
                 <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:8000/login">LOGIN</a>
+                  <a class="nav-link" href="http://127.0.0.1:8000/login">Iniciar sesión</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:8000/formulario">Sign In</a>
+                  <a class="nav-link" href="http://127.0.0.1:8000/formulario">Crear cuenta</a>
                 </li>
                 @endguest
                 
@@ -85,24 +149,26 @@
         <div
           class="p-5 text-center bg-image"
           style="
-            background-image: url('https://i.blogs.es/259581/one-piece/1366_2000.jpeg');
+            background-image: url('https://img2.rtve.es/i/?w=1600&i=1628606892247.jpg');
             height: 400px;
           "
         >
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-white">
-                <h1 class="mb-3">One Piece</h1>
-                <h4 class="mb-3">Creador: Eiichirō Oda</h4>
+                <h1 class="mb-3">Dulceria UTA</h1>
+                <h4 class="mb-3">Creadores: Equipo 1</h4>
                 <a class="btn btn-outline-light btn-lg" href="#!" role="button"
-                >Live action</a
+                >Es mejor compartir</a
                 >
               </div>
             </div>
           </div>
         </div>
         <!-- Background image -->
-      </header>
+      </header> 
+
+
       <div class="container mt-5 mb-5">
 
         <h1>@yield('titulo')</h1>
@@ -112,7 +178,8 @@
         @yield('contenido')
       
       </div>
-      <footer class="bg-success text-center text-white">
+
+<footer class="bg-success text-center text-white mt-4">
   <!-- Grid container -->
   <div class="container p-4 pb-0">
     <!-- Section: Social media -->
@@ -176,10 +243,54 @@
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Copyright:
-    <a class="text-white" href="">Bernardo Paredes De Santos</a>
+    Copyright &copy; 2023 Seguridad en el desarrollo de aplicaciones | Universidad Tecnológica de Aguascalientes <span class="fa fa-heart"></span> Realizado por <a href="#">Equipo 1</a>
   </div>
   <!-- Copyright -->
-</footer>
+</footer> 
+
+
+{{-- <footer>
+  <div class="flex container">
+      <div class="footer-acerca">
+          <h5>Acerca de Dulcerias UTA</h5>
+          <p>Esto es solo una tarea para la universidad IDGS del cuatrimestre 8-A-II, todo esto es con fines educativos
+              y de aprendizaje. los productos seleccionados vistos en este página es mero gusto del creador de esta misma
+              es un gordo dulcero pero feliz.</p>
+      </div>
+
+      <div class="footer-links">
+          <h5>Links rapidos</h5>
+          <ul>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Testimonios</a></li>
+              <li><a href="#">Contacto</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-suscribete">
+          <h5 class="sigueme">Sigueme</h5>
+          <ul>
+              <li><a href="https://twitter.com/m07636150" target="_blank"><span class="fab fa-twitter"></span></a></li>
+              <li><a href="https://www.instagram.com/ulises_fc/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+              <li><a href="https://github.com/Rck23" target="_blank"><span class="fab fa-github"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/ulises-mart%C3%ADnez-olivares-09276b258/" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
+          </ul>
+      </div>
+  </div>
+
+  <small>
+      Copyright &copy; 2023 Seguridad en el desarrollo de aplicaciones | Universidad Tecnológica de Aguascalientes <span class="fa fa-heart"></span> Realizado por <a href="https://github.com/Rck23">Equipo 1</a>
+  </small>
+</footer> --}}
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript" src="{!! asset('js/animacion.js') !!}" async></script>
+
+
 </body>
 </html>

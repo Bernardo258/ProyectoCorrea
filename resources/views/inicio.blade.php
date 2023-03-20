@@ -8,32 +8,30 @@
 
 @section('contenido')
 
-  <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="row row-cols-1 row-cols-md-2 g-4" >
     <div class="col">
       <div class="card">
-        <img src="https://ramenparados.com/wp-content/uploads/2016/03/one-piece-strong-1000x600.png" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+        <img style="height: 30rem" src="https://cdn.shopify.com/s/files/1/1327/3893/products/Personaliza-Canasta-de-Dulces-04.jpg?v=1675299979&width=1946" class="card-img-top" alt="Hollywood Sign on The Hill"/>
         <div class="card-body">
-          <h5 class="card-title">One Piece Film: Strong World</h5>
+          <h5 class="card-title">Encuentra tus dulces.</h5>
           <p class="card-text">
-            Luffy y el resto de Sombreros de Paja van a sus hogares, 
-            ya que una grave crisis amenaza las islas de East Blue. En el camino se cruzan con el pirata Shiki el León Dorado, que secuestra a Nami.
+            Contamos con gran variedad de dulces, encuentra tus dulces favoritos con nosotros.
           </p>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="card">
-        <img src="https://i.blogs.es/040680/one-piece-film-red-mexico-fecha-estreno-cinepolis/1366_2000.jpeg" class="card-img-top" alt="Palm Springs Road"/>
+        <img style="height: 30rem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShJtzZsdgajPxJjCqzv8CChQJfte4pKe8llA&usqp=CAU" class="card-img-top" alt="Palm Springs Road"/>
         <div class="card-body">
-          <h5 class="card-title">One Piece Film: Red</h5>
+          <h5 class="card-title">Visitanos.</h5>
           <p class="card-text">
-            Uta, la cantante más popular del mundo, va a presentarse en un escenario y revelar su apariencia por primera vez. 
-            Luffy y sus amigos acuden al concierto y se dan cuenta de que la voz de Uta es capaz de cambiarlo todo.
+            Encuentranos en Aulas 2, salón 8 para realizar la compra y seas un universitario feliz.
           </p>
         </div>
       </div>
     </div>
-    <div class="col">
+    {{-- <div class="col">
       <div class="card">
         <img src="https://occ-0-1555-784.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABQqi72f3QUPYXG3NR4SOt8sZIN4UY8Wc8J5i1c3VqLZP-2wZcXqS97PfNJ7XbYRMxmMZtT4nFaLODb5O4qPI4fdye89k5qJ0TsSV.jpg?r=d98" class="card-img-top" alt="Los Angeles Skyscrapers"/>
         <div class="card-body">
@@ -75,6 +73,6 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
 
 @endsection

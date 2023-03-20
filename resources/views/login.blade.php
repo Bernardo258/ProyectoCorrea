@@ -29,7 +29,7 @@
 
 
     <!-- 2 column grid layout for inline styling -->
-
+{{-- 
     <div class="row mb-4">
 
         <div class="col d-flex justify-content-center">
@@ -56,13 +56,13 @@
 
         </div>
 
-    </div>
+    </div> --}}
 
 
 
     <!-- Submit button -->
 
-    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+    <button type="submit" class="btn btn-primary btn-block">Inicia Sesión</button>
 
     </form>
 
