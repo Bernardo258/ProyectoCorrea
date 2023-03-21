@@ -214,9 +214,7 @@ Escoge tu pelicula
   <section id="principal">
     <div class="fade"></div>
     <div class="principal-text">
-        <h1>Dulcerias La FLDSMDFR</h1>
-        <p>“Preocúpate por la calidad de tus productos, mucha gente no está preparada para la excelencia y sorprenderás”.</p>
-    </div>
+   </div>
 </section>
 </div>
 
@@ -268,7 +266,7 @@ Escoge tu pelicula
         </div>
 
         <div>
-            <img src="https://chedrauimx.vtexassets.com/arquivos/ids/10609112/07432354_00.jpg?v=638085780965670000" alt="Property 1" />
+            <img src="https://detqhtv6m6lzl.cloudfront.net/wp-content/uploads/2021/05/mini_7432354-1.jpg" alt="Property 1" />
             <div class="dulces-detalles">
                 <p class="price">$8.00</p>
                 <span class="beds">Bubulubu</span>
@@ -351,39 +349,39 @@ Escoge tu pelicula
 
     <div class="flex">
         <div class="card">
-            <img id="yop" src="{{ asset('img/Yo.jpg') }}" alt="mi foto">
+            <img id="yop" src="{{ asset('img/ul.jpeg') }}" alt="mi foto">
             <h3>Ulises Martínez</h3>
-            <p>Desarrollador de La FLDSMDFR</p>
+            <p>Complice en el desarrollo de Dulceria UTA</p>
         </div>
 
         <div class="card">
-            <img id="yop" src="/img/Yo.jpg" alt="Realtor 1" />
-            <h3>Ulises Martínez</h3>
-            <p>Analista de La FLDSMDFR</p>
+            <img id="yop" src="/img/se.png" alt="Realtor 1" />
+            <h3>Sebastian Guerra</h3>
+            <p>Analista de Dulceria UTA</p>
         </div>
 
         <div class="card">
-            <img id="yop" src="/img/Yo.jpg" alt="Realtor 1" />
+            <img id="yop" src="/img/ul.jpeg" alt="Realtor 1" />
             <h3>Ulises Martínez</h3>
-            <p>Hacker de La FLDSMDFR</p>
+            <p>Hacker de Dulceria UTA</p>
         </div>
 
         <div class="card">
-            <img id="yop" src="/img/Yo.jpg" alt="Realtor 1" />
-            <h3>Ulises Martínez</h3>
-            <p>Contador de La FLDSMDFR</p>
+            <img id="yop" src="/img/ber.png" alt="Realtor 1" />
+            <h3>Bernardo Paredes</h3>
+            <p>Administrador y mercadologo de Dulceria UTA</p>
         </div>
 
         <div class="card">
-            <img id="yop" src="/img/Yo.jpg" alt="Realtor 1" />
-            <h3>Ulises Martínez</h3>
-            <p>Administrador y mercadologo de La FLDSMDFR</p>
+            <img id="yop" src="/img/se.png" alt="Realtor 1" />
+            <h3>Sebastian Guerra</h3>
+            <p>Inversionista #1 de Dulceria UTA</p>
         </div>
 
         <div class="card">
-            <img id="yop" src="/img/Yo.jpg" alt="Realtor 1" />
-            <h3>Ulises Martínez</h3>
-            <p>Inversionista #1 de La FLDSMDFR</p>
+          <img id="yop" src="/img/ber.png" alt="Realtor 1" />
+          <h3>Bernardo Paredes</h3>
+          <p>Contador de Dulceria UTA</p>
         </div>
     </div>
 </div>

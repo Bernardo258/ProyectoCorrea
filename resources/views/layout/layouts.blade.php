@@ -23,7 +23,7 @@
 
             <!--CSS-->
             <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-            {{-- <link rel="stylesheet" href="{!! asset('css/stilo.css') !!}"> --}}
+            <link rel="stylesheet" href="{!! asset('css/stilo.css') !!}"> 
 
     <script scr="{{asset('js/mdb.min.js')}}"></script>
     <title>Dulceria UTA</title>
@@ -102,9 +102,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarExample01">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/">Home</a>
+                @guest
+                <li class="nav-item ">
+                  <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/">Inicio</a>
                 </li>
+                @endguest
+    
                 {{-- <li class="nav-item">
                   <a class="nav-link" href="#">Serie</a>
                 </li>
@@ -159,7 +162,7 @@
                 <h1 class="mb-3">Dulceria UTA</h1>
                 <h4 class="mb-3">Creadores: Equipo 1</h4>
                 <a class="btn btn-outline-light btn-lg" href="#!" role="button"
-                >Es mejor compartir</a
+                >“Preocúpate por la calidad de tus productos, mucha gente no está preparada para la excelencia y sorprenderás”</a
                 >
               </div>
             </div>
@@ -171,7 +174,7 @@
 
       <div class="container mt-5 mb-5">
 
-        <h1>@yield('titulo')</h1>
+        <h1 style="color:rgba(203, 46, 156, 0.962);">@yield('titulo')</h1>
       
         <hr class="hr">
       
@@ -179,7 +182,7 @@
       
       </div>
 
-<footer class="bg-success text-center text-white mt-4">
+{{-- <footer class="bg-white text-center text-white mt-4">
   <!-- Grid container -->
   <div class="container p-4 pb-0">
     <!-- Section: Social media -->
@@ -246,16 +249,16 @@
     Copyright &copy; 2023 Seguridad en el desarrollo de aplicaciones | Universidad Tecnológica de Aguascalientes <span class="fa fa-heart"></span> Realizado por <a href="#">Equipo 1</a>
   </div>
   <!-- Copyright -->
-</footer> 
+</footer>  --}}
 
 
-{{-- <footer>
-  <div class="flex container">
+<footer>
+  <div class="flex container ">
       <div class="footer-acerca">
           <h5>Acerca de Dulcerias UTA</h5>
           <p>Esto es solo una tarea para la universidad IDGS del cuatrimestre 8-A-II, todo esto es con fines educativos
-              y de aprendizaje. los productos seleccionados vistos en este página es mero gusto del creador de esta misma
-              es un gordo dulcero pero feliz.</p>
+              y de aprendizaje. los productos seleccionados vistos en este página es mero gusto de los creadores de esta misma página
+              somos dulceros de corazón y nunca de ocasión.</p>
       </div>
 
       <div class="footer-links">
@@ -282,7 +285,7 @@
   <small>
       Copyright &copy; 2023 Seguridad en el desarrollo de aplicaciones | Universidad Tecnológica de Aguascalientes <span class="fa fa-heart"></span> Realizado por <a href="https://github.com/Rck23">Equipo 1</a>
   </small>
-</footer> --}}
+</footer>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

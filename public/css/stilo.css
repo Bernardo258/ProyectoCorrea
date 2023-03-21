@@ -94,86 +94,28 @@ p.parrafo {
     width: 50px;
     height: 50px;
 }
-#header-container {
+/* #header-container {
     min-height: 600px;
     height: calc(100vh);
     position: relative;
-}
+} */
 
-header {
-    background: transparent;
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-}
-
-#logo {
-    font-family: "Roboto", "Helvetica", "Sans-serif";
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    top: 4px;
-}
-
-.hamburger-menu {
-    background-color: transparent;
-    border: 1px solid #fff;
-    padding: 3px 5px;
-    width: 30px;
-    cursor: pointer;
-    margin-top: 10px;
-    display: none;
-}
-
-.hamburger-menu .strip {
-    display: block;
-    height: 1px;
-    background-color: #fff;
-    margin: 4px 0;
-}
-
-header ul {
-    list-style-type: none;
-}
-
-header ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-#close-flyout {
-    display: none;
-}
-
-header ul li a {
-    color: #999;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-header ul.is-sticky li a {
+.nav-link{
+    font-weight: bold;
     color: #000;
 }
 
-header ul li a:hover,
-header ul li a.active {
-    color: #fff;
+.nav-link:hover{
+    color:  rgba(203, 46, 156, 0.962);
+    text-decoration-line: underline;
+
 }
 
-header ul.is-sticky li a:hover,
-header ul.is-sticky li a.active {
-    color: rgba(84, 15, 63, 0.579);
-}
-/* FIN HEADER */
 
 
 /* PRINCIPAL */
-#principal {
-    background: url('https://img2.rtve.es/i/?w=1600&i=1628606892247.jpg') center center no-repeat;
+/*#principal {
+     background: url('https://img2.rtve.es/i/?w=1600&i=1628606892247.jpg') center center no-repeat; 
     background-size: cover;
     position: absolute;
     top: 0;
@@ -209,7 +151,7 @@ header ul.is-sticky li a.active {
     line-height: 1.5em;
     font-weight: 300;
     font-size: 1.2rem;
-}
+}*/
 /* FIN PRINCIPAL */
 
 /* TRABAJO */
@@ -513,7 +455,7 @@ header ul.is-sticky li a.active {
 
 /* FOOTER */
 footer {
-    background: rgb(29, 27, 27);
+    background: rgb(255, 255, 255);
     padding: 2.8rem 0;
 }
 
@@ -523,7 +465,7 @@ footer .flex {
 }
 
 footer h5 {
-    color: #fff;
+    color: rgba(203, 46, 156, 0.962);
     margin-bottom: 1rem;
     font-weight: 300;
 }
@@ -560,7 +502,7 @@ footer .footer-links ul li a {
 }
 
 footer .footer-links ul li a:hover {
-    color: #fff;
+    color: rgba(203, 46, 156, 0.962);
 }
 
 footer .footer-suscribete {
@@ -576,7 +518,7 @@ footer .footer-suscribete input {
     background-color: transparent;
     font-size: 1rem;
     padding: 10px;
-    color: #fff;
+    color:rgba(203, 46, 156, 0.962);
     box-sizing: border-box;
     width: 80%;
 }
@@ -596,7 +538,7 @@ footer button.right-rounded {
 }
 
 footer button.right-rounded:hover {
-    background: #fff;
+    background:rgba(203, 46, 156, 0.962);
 }
 
 footer .footer-suscribete ul {
@@ -620,7 +562,7 @@ footer .footer-suscribete ul li a {
 }
 
 footer .footer-suscribete ul li a:hover {
-    color: #fff;
+    color: rgba(203, 46, 156, 0.962);
 }
 
 footer small {
@@ -636,7 +578,7 @@ footer small a {
 }
 
 footer small a:hover {
-    color: #fff;
+    color:rgba(203, 46, 156, 0.962);
 }
 /* FIN FOOTER */
 

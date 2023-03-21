@@ -13,7 +13,7 @@
     <div class="form-outline mb-4">
 
         <input type="email" id="form1Example1" name="email" class="form-control" />
-        <label class="form-label" for="form1Example1">Email</label>
+        <label class="form-label" for="form1Example1">Correo electrónico</label>
 
     </div>
     <!-- Password input -->
@@ -22,7 +22,7 @@
 
         <input type="password" name="password" id="form1Example2" class="form-control" />
 
-        <label class="form-label" for="form1Example2">Password</label>
+        <label class="form-label" for="form1Example2">Contraseña</label>
 
     </div>
 
@@ -62,7 +62,7 @@
 
     <!-- Submit button -->
 
-    <button type="submit" class="btn btn-primary btn-block">Inicia Sesión</button>
+    <button type="submit" class="btn btn-primary btn-block" style="background-color: rgba(203, 46, 156, 0.962);">Inicia Sesión</button>
 
     </form>
 

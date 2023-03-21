@@ -47,16 +47,12 @@
       <input type="password" name="password_confirmation" id="password" class="form-control" />
       <label class="form-label" for="password_confirmation">Confirmation Password</label>
     </div>
-    <!-- Checkbox -->
-    <div class="form-check d-flex justify-content-center mb-4">
-      <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
-      <label class="form-check-label" for="form6Example8"> Create an account? </label>
-    </div>
+
     @error('form6Example8')
     <p style="color: red">{{$message}}</p>
     @enderror
     <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+    <button type="submit" class="btn btn-primary btn-block mb-4" style="background-color: rgba(203, 46, 156, 0.962);">Crear cuenta</button>
   </form>
 
   @endsection
