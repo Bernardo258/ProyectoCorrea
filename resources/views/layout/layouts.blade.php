@@ -17,6 +17,17 @@
     ></script>
     <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
 
+<<<<<<< HEAD
+=======
+
+            <!-- Fonts -->
+            <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+            <!--CSS-->
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+            <link rel="stylesheet" href="{!! asset('css/stilo.css') !!}"> 
+
+>>>>>>> b161bb7 (Muchos cambios locos (APP Dulceria))
     <script scr="{{asset('js/mdb.min.js')}}"></script>
     <title>Desarrollo web profesional</title>
 </head>
@@ -38,10 +49,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarExample01">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/">Home</a>
+                @guest
+                <li class="nav-item ">
+                  <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/">Inicio</a>
                 </li>
+<<<<<<< HEAD
                 <li class="nav-item">
+=======
+                @endguest
+    
+                {{-- <li class="nav-item">
+>>>>>>> b161bb7 (Muchos cambios locos (APP Dulceria))
                   <a class="nav-link" href="#">Serie</a>
                 </li>
                 <li class="nav-item">
@@ -95,7 +113,11 @@
                 <h1 class="mb-3">One Piece</h1>
                 <h4 class="mb-3">Creador: Eiichirō Oda</h4>
                 <a class="btn btn-outline-light btn-lg" href="#!" role="button"
+<<<<<<< HEAD
                 >Live action</a
+=======
+                >“Preocúpate por la calidad de tus productos, mucha gente no está preparada para la excelencia y sorprenderás”</a
+>>>>>>> b161bb7 (Muchos cambios locos (APP Dulceria))
                 >
               </div>
             </div>
@@ -105,14 +127,19 @@
       </header>
       <div class="container mt-5 mb-5">
 
-        <h1>@yield('titulo')</h1>
+        <h1 style="color:rgba(203, 46, 156, 0.962);">@yield('titulo')</h1>
       
         <hr class="hr">
       
         @yield('contenido')
       
       </div>
+<<<<<<< HEAD
       <footer class="bg-success text-center text-white">
+=======
+
+{{-- <footer class="bg-white text-center text-white mt-4">
+>>>>>>> b161bb7 (Muchos cambios locos (APP Dulceria))
   <!-- Grid container -->
   <div class="container p-4 pb-0">
     <!-- Section: Social media -->
@@ -180,6 +207,55 @@
     <a class="text-white" href="">Bernardo Paredes De Santos</a>
   </div>
   <!-- Copyright -->
+<<<<<<< HEAD
 </footer>
+=======
+</footer>  --}}
+
+
+<footer>
+  <div class="flex container ">
+      <div class="footer-acerca">
+          <h5>Acerca de Dulcerias UTA</h5>
+          <p>Esto es solo una tarea para la universidad IDGS del cuatrimestre 8-A-II, todo esto es con fines educativos
+              y de aprendizaje. los productos seleccionados vistos en este página es mero gusto de los creadores de esta misma página
+              somos dulceros de corazón y nunca de ocasión.</p>
+      </div>
+
+      <div class="footer-links">
+          <h5>Links rapidos</h5>
+          <ul>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Testimonios</a></li>
+              <li><a href="#">Contacto</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-suscribete">
+          <h5 class="sigueme">Sigueme</h5>
+          <ul>
+              <li><a href="https://twitter.com/m07636150" target="_blank"><span class="fab fa-twitter"></span></a></li>
+              <li><a href="https://www.instagram.com/ulises_fc/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+              <li><a href="https://github.com/Rck23" target="_blank"><span class="fab fa-github"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/ulises-mart%C3%ADnez-olivares-09276b258/" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
+          </ul>
+      </div>
+  </div>
+
+  <small>
+      Copyright &copy; 2023 Seguridad en el desarrollo de aplicaciones | Universidad Tecnológica de Aguascalientes <span class="fa fa-heart"></span> Realizado por <a href="https://github.com/Rck23">Equipo 1</a>
+  </small>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript" src="{!! asset('js/animacion.js') !!}" async></script>
+
+
+>>>>>>> b161bb7 (Muchos cambios locos (APP Dulceria))
 </body>
 </html>

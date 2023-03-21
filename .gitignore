@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /node_modules
 /public/build
 /public/hot
@@ -15,3 +16,21 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+=======
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+>>>>>>> b161bb7 (Muchos cambios locos (APP Dulceria))
