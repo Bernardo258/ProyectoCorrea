@@ -8,6 +8,7 @@
     <!-- Vite -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
+
     <!-- MDBootstrap -->
     <script src="https://kit.fontawesome.com/825719bb21.js" crossorigin="anonymous"></script>
     <!-- MDB -->
@@ -118,6 +119,9 @@
                   <a class="nav-link" href="#">Informacion sobre One Piece</a>
                 </li> --}}
                 @auth
+                  <li class="nav-item ">
+                    <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/dashboard">Inicio</a>
+                  </li>
                   <div class="d-flex aling-items-center">
                     <a href="{{route ('post.create')}}" class="btn btn-link px-3 me-2">
                       <i class="fas fa-plus-circle"></i>Crear Post
