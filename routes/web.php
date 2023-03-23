@@ -22,9 +22,7 @@ use App\Http\Controllers\ImagenController;
 Route::get('/login', function () {
     return view('login');
 });
-/*Route::get('/formulario', function () {
-    return view('formulario');
-});*/
+
 Route::get('/', function () {
     return view('inicio');
 });
