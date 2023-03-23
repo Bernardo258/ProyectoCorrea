@@ -45,3 +45,6 @@ Route::get('/muro/create', [PostController::class, 'create'])->name('post.create
 
 Route::post('/imagenes', [ImagenController::class, 'store'])->name('imagenes');
 
+Route::post('/Posts', [PostController::class, 'store'])->name('post.index');
+
+
